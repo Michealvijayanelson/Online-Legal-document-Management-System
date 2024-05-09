@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Upload File</title>
+    <link rel="stylesheet" href="upload_style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">
+            <div class="input-bx">
+                <h2 class="upload-area-title">Upload File</h2>
+                <form action="" id="uploadForm">
+                    <input type="file" id="upload" accept=".doc,.pdf,.docx" hidden>
+                    <label for="upload" class="uploadlabel">
+                        <span><i class="fa fa-cloud-upload"></i></span>
+                        <p>Click To Upload</p>
+                    </label>
+                </form>
+                <div id="buttons">
+                    <button id="cancelBtn">Cancel</button>
+                    <button type="submit" id="submitBtn" onclick="suc()" >Submit</button>
+                </div>
+            </div>
+            <div id="filewrapper"></div>
+        </div>
+    </div>
+    <div id="uploadSuccessMessage" class="hidden">
+        <p>Your document has been successfully uploaded!</p>
+    </div>
+    <script>
+        function suc()
+    {
+        alert("The File Has Been Uploaded Successfully...");
+    }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

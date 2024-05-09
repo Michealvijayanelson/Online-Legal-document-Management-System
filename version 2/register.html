@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Document Management System - Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <img src="logo.png" alt="Avatar" class="logo">
+    <div class="box">
+        <h2>Legal Document Management System</h2>
+
+        <h3>Register</h3>
+        <form action="your_register_script.php" method="post">
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" required><br><br>
+
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" required><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required><br><br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea><br><br>
+
+            <label for="password">Create a Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+            <input type="submit" value="Register">
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+</div>
+
+</body>
+</html>

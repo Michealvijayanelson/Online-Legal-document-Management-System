@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    /* Add your background image URL and set its properties */
+    background: url('upload.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensure the background image covers the entire screen */
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    min-height: 100vh;
+    /* Remove background color from the wrapper to let the body background show through */
+}
+
+.box {
+    max-width: 500px;
+    background: lightblue;
+    padding: 30px;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.upload-area-title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+.uploadlabel {
+    width: 100%;
+    min-height: 120px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px dashed black;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.uploadlabel:hover {
+    background: #d0d0d0;
+}
+
+.uploadlabel span {
+    font-size: 60px;
+    color: #999;
+}
+
+.uploadlabel p {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+#filewrapper {
+    margin-top: 20px;
+}
+
+.showfilebox {
+    display: flex;
+    flex-direction: column; /* Changed to column layout */
+    align-items: center;
+    margin: 10px 0;
+    padding: 15px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.showfilebox .left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.filetype {
+    background: #007bff;
+    color: #fff;
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.left h3 {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.right span {
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px; /* Added margin for spacing */
+}
+
+#buttons button {
+    width: 48%; /* Adjust button width */
+}
